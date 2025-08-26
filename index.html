@@ -36,48 +36,195 @@
       }
     </style>
   </head>
-  <body>
+  <body class="hind-madurai-light">
     <header class="max-w-[1920px] mx-auto">
-
-        <!-- nav -->
-        <nav class="flex justify-between items-center bg-white px-15 py-6"> 
-
-            <!-- left  -->
-            <div class="flex gap-3 items-center">
-                <img class="h-[60px] w-[60px]" src="./assets/logo.png" alt="Logo of Bangladesh">
-                <h2 class="text-3xl font-black text-[#006747]">Emergency <br> Service  </h2>
-            </div>
-
-            <!-- right -->
-            <div class="flex gap-5">
-                <div class="bg-[#ecfff0] flex justify-center items-center w-[125px] h-[55px] rounded-full">
-                    <div class="flex gap-3 justify-center items-center">
-                        <span class="font-black">0</span>
-                    <img class="h-[20px] w-[22px]" src="./assets/heart.png" alt="">
-                    </div>  
-                </div>
-                <div class="bg-[#ecfff0] flex justify-center items-center w-[125px] h-[55px] rounded-full">
-                    <div class="flex gap-3 justify-center items-center">
-                        <span class="font-black">100</span>
-                    <img class="h-[23px] w-[23px]" src="./assets/coin.png" alt="">
-                    </div>
-                </div>
-                <div class="bg-[#00A63E] flex justify-center items-center w-[125px] h-[55px] text-white rounded-full">
-                    <div class="font-semibold">
-                        <span>2</span> Copy
-                    </div>
-            </div>
-        </nav>
-
-        <!-- banner  -->
-        <div class="h-[240px] flex justify-center items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013424]">
-            <div class="text-center text-white">
-                <img class="h-[92px] w-[92px] mx-auto" src="./assets/logo-dark.png" alt="">
-                <h1 class="text-[40px]">জরুরি সেবা ডিরেক্টরি</h1>
-                <p class="text-xl font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
-            </div>
+      <!-- nav -->
+      <nav class="flex gap-5 flex-col md:flex-row justify-between items-center bg-white px-15 py-6">
+        <!-- left  -->
+        <div class="flex gap-3 items-center">
+          <img
+            class="h-[60px] w-[60px]"
+            src="./assets/logo.png"
+            alt="Logo of Bangladesh"
+          />
+          <h2 class="text-3xl font-black text-[#006747]">
+            Emergency <br />
+            Service
+          </h2>
         </div>
+
+        <!-- right -->
+        <div class="flex gap-5">
+          <div
+            class="bg-[#ecfff0] flex justify-center items-center w-[125px] h-[55px] rounded-full"
+          >
+            <div class="flex gap-3 justify-center items-center">
+              <span class="font-black">0</span>
+              <img class="h-[20px] w-[22px]" src="./assets/heart.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="bg-[#ecfff0] flex justify-center items-center w-[125px] h-[55px] rounded-full"
+          >
+            <div class="flex gap-3 justify-center items-center">
+              <span class="font-black">100</span>
+              <img class="h-[23px] w-[23px]" src="./assets/coin.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="bg-[#00A63E] flex justify-center items-center w-[125px] h-[55px] text-white rounded-full"
+          >
+            <div class="font-semibold"><span>2</span> Copy</div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner  -->
+      <div
+        class="h-[280px] flex justify-center items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013424] py-5"
+      >
+        <div class="text-center text-white">
+          <img
+            class="h-[92px] w-[92px] mx-auto"
+            src="./assets/logo-dark.png"
+            alt=""
+          />
+          <h1 class="text-[40px]">জরুরি সেবা ডিরেক্টরি</h1>
+          <p class="text-xl font-semibold">
+            Government Emergency Services at Your Fingertip – A Project by
+            Government of the People’s Republic of Bangladesh
+          </p>
+        </div>
+      </div>
     </header>
-    <main></main>
+
+
+    <!-- main section -->
+    <main class="max-w-[1920px] mx-auto bg-[#f5fff6] py-13 md:px-15 px-5">
+      <section class="grid md:grid-cols-12 md:gap-8 gap-4">
+        <div class="md:col-span-9">
+          <div class="grid grid-cols-3 gap-8">
+            <!-- card 1 -->
+          <div class="card bg-base-100 shadow-sm p-8">
+            <!-- img -->
+            <div class="flex items-center justify-between">
+              <figure class="bg-[#ffe3e1] h-15 w-15 rounded-2xl">
+              <img class="w-[32px] h-[32px]"
+                src="./assets/emergency.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="text-gray-400">
+              <i class="fa-regular fa-heart h-6 w-6"></i>
+            </div>
+            </div>
+            <div class="card-body p-0">
+              <h2 class="card-title text-2xl mt-4 text-[#111111] font-bold">
+                জাতীয় জরুরি সেবা
+              </h2>
+              <p class="text-gray-400 mb-6 text-xl">
+                National Emergency
+              </p>
+              
+              <h2 class="text-3xl font-bold">999</h2>
+
+              <div class="bg-[#f2f2f2] w-[120px] rounded-full">
+                <p class="text-gray-400 text-xl text-center py-2 px-4 ">সার্বজনীন</p>
+              </div>
+              <div class="card-actions mt-6 flex justify-between">
+                <div class="badge h-10 border border-gray-400 text-gray-500 text-center w-[48%]"> <i class="fa-regular fa-copy"></i>
+                  Copy
+                </div>
+
+                <div class="badge h-10 border border-gray-400 bg-[#00a63e] text-center w-[48%] text-white">
+                  <i class="fa-solid fa-phone"></i>
+                  Call
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card bg-base-100 shadow-sm p-8">
+            <!-- img -->
+            <div class="flex items-center justify-between">
+              <figure class="bg-[#dfefff] h-15 w-15 rounded-2xl">
+              <img class="w-[32px] h-[32px]"
+                src="./assets/police.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="text-gray-400">
+              <i class="fa-regular fa-heart h-6 w-6"></i>
+            </div>
+            </div>
+            <div class="card-body p-0">
+              <h2 class="card-title text-2xl mt-4 text-[#111111] font-bold">
+                পুলিশ
+              </h2>
+              <p class="text-gray-400 mb-6 text-xl">
+                Police
+              </p>
+              
+              <h2 class="text-3xl font-bold">999</h2>
+
+              <div class="bg-[#f2f2f2] w-[120px] rounded-full">
+                <p class="text-gray-400 text-xl text-center py-2 px-4 ">পুলিশ</p>
+              </div>
+              <div class="card-actions mt-6 flex justify-between">
+                <div class="badge h-10 border border-gray-400 text-gray-500 text-center w-[48%]"> <i class="fa-regular fa-copy"></i>
+                  Copy
+                </div>
+
+                <div class="badge h-10 border border-gray-400 bg-[#00a63e] text-center w-[48%] text-white">
+                  <i class="fa-solid fa-phone"></i>
+                  Call
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card bg-base-100 shadow-sm p-8">
+            <!-- img -->
+            <div class="flex items-center justify-between">
+              <figure class="bg-[#ffe3e1] h-15 w-15 rounded-2xl">
+              <img class="w-[32px] h-[32px]"
+                src="./assets/emergency.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="text-gray-400">
+              <i class="fa-regular fa-heart h-6 w-6"></i>
+            </div>
+            </div>
+            <div class="card-body p-0">
+              <h2 class="card-title text-2xl mt-4 text-[#111111] font-bold">
+                ফায়ার সার্ভিস
+              </h2>
+              <p class="text-gray-400 text-xl">
+                Fire Service
+              </p>
+              
+              <h2 class="text-3xl font-bold">999</h2>
+
+              <div class="bg-[#f2f2f2] w-[120px] rounded-full">
+                <p class="text-gray-400 text-xl text-center py-2 px-4 ">ফায়ার</p>
+              </div>
+              <div class="card-actions mt-6 flex justify-between">
+                <div class="badge h-10 border border-gray-400 text-gray-500 text-center w-[48%]"> <i class="fa-regular fa-copy"></i>
+                  Copy
+                </div>
+
+                <div class="badge h-10 border border-gray-400 bg-[#00a63e] text-center w-[48%] text-white">
+                  <i class="fa-solid fa-phone"></i>
+                  Call
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="bg-white md:col-span-3 rounded-xl"></div>
+      </section>
+    </main>
   </body>
 </html>
