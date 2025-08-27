@@ -103,7 +103,8 @@
     <!-- main section -->
     <main class="max-w-[1920px] mx-auto bg-[#f5fff6] py-13 md:px-15 px-5">
       <section class="grid md:grid-cols-12 md:gap-8 gap-4">
-        <div class="md:col-span-9">
+        <!-- card section -->
+        <section class="md:col-span-9">
           <div class="grid md:grid-cols-3 gap-8">
             <!-- card 1 -->
             <div class="card bg-base-100 shadow-md p-8">
@@ -511,8 +512,35 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="bg-white shadow-md  md:col-span-3 rounded-xl">5</div>
+        </section>
+
+        <!-- history section -->
+        <section class="bg-white shadow-md md:col-span-3 rounded-xl">
+          <div class="w-11/12 mx-auto mt-10">
+            <div class="flex justify-between items-center mb-4">
+              <p class="text-xl text-[#111111]">
+                <i class="fa-regular fa-clock"></i>
+                Call History
+              </p>
+              <button class="bg-[#00a63e] text-white rounded-full h-13 w-28">
+                Clear
+              </button>
+            </div>
+
+            <!-- history show -->
+            <div>
+              <div
+                class="flex justify-between items-center text-xl mb-2 bg-[#fafafa] p-5 rounded-lg"
+              >
+                <div>
+                  <h3 class="text-[#2e2e2e]">জাতীয় জরুরি সেবা</h3>
+                  <p class="text-[#666666]">999</p>
+                </div>
+                <p class="text-[#2e2e2e]">11:36:58 AM</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
   </body>
