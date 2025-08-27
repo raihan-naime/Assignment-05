@@ -76,7 +76,7 @@
           <div
             class="bg-[#00A63E] flex justify-center items-center w-[125px] h-[55px] text-white rounded-full"
           >
-            <div class="font-semibold"><span>0 </span> Copy</div>
+            <div class="font-semibold"><span id="copy-point">0 </span> Copy</div>
           </div>
         </div>
       </nav>
@@ -360,12 +360,12 @@
                   </p>
                 </div>
                 <div class="card-actions mt-6 flex justify-between">
-                  <div
+                  <button
                     class="badge btn-copy h-10 border hover:bg-purple-600 border-gray-400 text-gray-500 text-center w-[48%]"
                   >
                     <i class="fa-regular fa-copy"></i>
                     Copy
-                  </div>
+                  </button>
 
                   <button
                     class="badge btn-call hover:bg-purple-600 h-10 border border-[#00a63e] bg-[#00a63e]  text-center w-[48%] text-white"
@@ -522,7 +522,7 @@
                 <i class="fa-regular fa-clock"></i>
                 Call History
               </p>
-              <button class="bg-[#00a63e] hover:bg-purple-600 text-white rounded-full h-13 w-28">
+              <button id="btn-clear" class="bg-[#00a63e] hover:bg-purple-600 text-white rounded-full h-13 w-28">
                 Clear
               </button>
             </div>
