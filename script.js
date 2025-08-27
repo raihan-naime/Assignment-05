@@ -27,11 +27,27 @@ for(const btn of btnCalls){
         const callNumber = btn.parentNode.parentNode.children[2].innerText;
 
         // display coins
-        const displayCoins = 0;
         let coins = Number(document.getElementById('coins').innerText);
         if(coins >= 20){
             alert(`📞 Calling ${text} ${callNumber}...`);
             document.getElementById('coins').innerText = coins - 20;
+
+            // get history parent
+            const historyParent = document.getElementById('history');
+            const div = document.createElement('div');
+            div.innerHTML = `
+            <div
+                class="flex justify-between items-center text-xl mb-2 bg-[#fafafa] p-5 rounded-lg"
+              >
+                <div>
+                  <h3 class="text-[#2e2e2e]">${text}</h3>
+                  <p class="text-[#666666]">${callNumber}</p>
+                </div>
+                <p class="text-[#2e2e2e]">${new Date().toLocaleTimeString()}</p>
+              </div>
+            `
+            historyParent.appendChild(div);
+
         }else{
             alert('❌ আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে ২০ কয়েন লাগবে')
         }
