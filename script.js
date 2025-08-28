@@ -1,5 +1,3 @@
-//❗❗❗❗❗❗❗ common functions ❗❗❗❗❗❗❗
-
 //❗❗❗❗❗❗❗display heart Points ❗❗❗❗❗❗❗
 let displayHeartCount = 0;
 const heartIcons = document.getElementsByClassName("heart-icon");
@@ -15,8 +13,17 @@ let displayCopyCount = 0;
 const CopyBtns = document.getElementsByClassName("btn-copy");
 for (const btn of CopyBtns) {
     btn.addEventListener("click", function () {
-        const callNumber = btn.parentNode.parentNode.children[2].innerText;
-        alert(`নাম্বার কপি হয়েছে ${callNumber}`);
+        
+
+        const card = this.closest('.card');
+        const textToCopy = card.querySelector('h2.text-3xl').innerText;
+        navigator.clipboard.writeText(textToCopy)
+        .then(function(){
+          alert(`নাম্বার কপি হয়েছে ${textToCopy}`)
+        })
+        .catch(function(err){
+          console.error(`নাম্বার কপি `, err);
+        })
       displayCopyCount++;
       document.getElementById("copy-point").innerText = displayCopyCount;
     });
